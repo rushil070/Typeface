@@ -1,0 +1,259 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("Myfont-Regular.otf") format("opentype");
+}
+
+.my-font {
+  font-family: "MyFont", serif;
+  font-size: 72px;
+  margin-top: 150px;
+}
+
+body {
+  margin: 0;
+  padding: 120px 0;
+  text-align: center;
+
+  background-image: url("slate.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  min-height: 100vh;
+}
+
+.logo-box {
+  margin-top: 300px;
+
+  display: inline-block;
+  padding: 20px 60px;
+  border-radius: 20px;
+
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.logo-font {
+  font-family: "MyFont", serif;
+  font-size: 120px;
+  margin: 0;
+
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    #d8d8d8,
+    #8f8f8f,
+    #4a4a4a,
+    #000000
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 20px;
+
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 1000;
+
+  box-sizing: border-box;
+}
+
+.top-left {
+  font-family: "MyFont", serif;
+  color: white;
+  font-size: 18px;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+}
+
+.time-box {
+  font-family: Arial, sans-serif;
+  color: white;
+  font-size: 14px;
+}
+
+#time {
+  font-family: Arial, sans-serif;
+  color: white;
+  font-size: 14px;
+}
+
+.styles-section {
+  margin-top: 600px;
+  padding: 60px 20px;
+  text-align: center;
+  color: rgb(247, 243, 243);
+}
+
+.style-buttons button {
+  margin: 10px;
+  padding: 12px 20px;
+  font-size: 14px;
+  cursor: pointer;
+
+  border: none;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.15);
+  color: rgb(233, 237, 238);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  transition: 0.2s;
+}
+
+.style-buttons button:hover {
+  background: rgba(79, 223, 234, 0.3);
+}
+
+.style-display {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.style-display img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 15px;
+
+  display: none;
+
+  position: relative;
+  left: 0;
+  transform: translateX(0);
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.hero-image {
+  display: block;
+  width: 30%;
+  max-width: 700px;
+  margin: 40px auto;
+
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.alphabet-font {
+  font-family: "MyFont", serif;
+  font-size: 36px;
+  color: white;
+
+  margin-top: 30px;
+  margin-bottom: 0;
+
+  line-height: 1.8;
+  letter-spacing: 3px;
+}
+
+.github-section {
+  margin: 250px auto;
+  text-align: center;
+  color: rgb(25, 18, 18);
+}
+
+.github-section h2 {
+  font-family: "MyFont", serif;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.github-section p {
+  font-size: 20px;
+  margin-bottom: 35px;
+  color: rgba(255,255,255,0.85);
+}
+
+.github-button {
+  display: inline-block;
+  padding: 16px 40px;
+
+  background: rgba(255,255,255,0.12);
+  color: white;
+
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 14px;
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  transition: 0.25s ease;
+}
+
+.github-button:hover {
+  background: rgba(255,255,255,0.25);
+  transform: translateY(-3px);
+}
+
+.github-text {
+  font-family: "MyFont", serif;
+  font-size: 100px;
+  color: red;
+}
+
+.demo-section {
+  margin: 200px auto;
+  padding: 40px 60px;
+  width: fit-content;
+  max-width: 90%;
+
+  text-align: center;
+  color: rgba(15, 14, 14, 0.837);
+
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.demo-section h2 {
+  font-family: "MyFont", serif;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.demo-text {
+  font-family: "MyFont", serif;
+  font-size: 52px;
+  letter-spacing: 2px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/*here*/

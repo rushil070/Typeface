@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <link rel="stylesheet" href="global.css">
+</head>
+
+<body>
+
+  <h1 class="my-font">Introducing Chryzor! The World's Newest, Best Font.</h1>
+  <img src="mountain.webp" alt="Mountain" class="hero-image">
+
+<div class="logo-box">
+  <h2 class="logo-font">CHRYZOR</h2>
+
+  <p class="alphabet-font">
+    Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm
+    <br>
+    Nn Oo Pp Rr Ss Tt Uu Vv Ww Xx Yy Zz
+  </p>
+</div>
+
+<div class="top-bar">
+  <div class="top-left">CHRYZOR</div>
+
+  <div class="top-right">
+    <span id="time"></span>
+  </div>
+</div>
+
+<script>
+function updateTime() {
+  const now = new Date();
+
+  const time = now.toLocaleTimeString("en-US", {
+    timeZone: "America/New_York",
+    hour: "numeric",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: true
+  });
+
+  document.getElementById("time").textContent = time;
+}
+
+updateTime();
+setInterval(updateTime, 1000);
+</script>
+
+<div class="github-section">
+  <h2>View Github</h2>
+
+  <p class="github-text">
+  Get font files for use
+  </p>
+
+  <a
+    href="https://github.com/rushil070/Typeface"
+    target="_blank"
+    class="github-button"
+  >
+    View on GitHub
+  </a>
+</div>
+
+<div class="demo-section">
+  <h2>Take a look at Chryzor in action</h2>
+
+  <p class="demo-text">
+    The quick brown fox jumps over the lazy dog.
+  </p>
+</div>
+
+<div class="styles-section">
+  <h2>Check out competing fonts</h2>
+
+  <div class="styles-bottom">
+
+    <div class="style-buttons">
+      <button onclick="showStyle('style1')">Style 1</button>
+      <button onclick="showStyle('style2')">Style 2</button>
+      <button onclick="showStyle('style3')">Style 3</button>
+    </div>
+
+  </div>
+
+  <div class="style-display">
+    <img id="styleImage" src="" alt="Style Preview">
+  </div>
+</div>
+
+<script>
+function showStyle(style) {
+  const img = document.getElementById("styleImage");
+
+  if (style === "style1") {
+    img.src = "Arial.png";
+  } else if (style === "style2") {
+    img.src = "TNR.png";
+  } else if (style === "style3") {
+    img.src = "Cambria.png";
+  }
+
+  img.style.display = "block";
+}
+</script>
+
+</body>
+
+</html>
